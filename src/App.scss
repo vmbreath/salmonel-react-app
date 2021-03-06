@@ -1,0 +1,95 @@
+.App {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-image: url("/double-bubble-outline.png");
+
+  @media (max-width: 1200px) {
+    max-width: 970px;
+  }
+  @media (max-width: 992px) {
+    max-width: 750px;
+  }
+  @media (max-width: 767px) {
+    max-width: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(185.96deg, rgba(255, 255, 255, 0.88) 4.73%, rgba(255, 255, 255, 0) 95.28%), linear-gradient(131.04deg, #CC15EA 26.73%, rgba(255, 255, 255, 0) 73.96%), #F0950C;
+    mix-blend-mode: normal;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    //padding: 0,5vh 2vw 1vh 2vw;
+
+    .link {
+      text-decoration: none;
+      margin: 1%;
+    }
+
+    .link:hover {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    @media (max-width: 500px) {
+
+      //flex-direction: column;
+      //align-items: flex-start;
+    }
+  }
+
+  .MuiButton-contained {
+    text-transform: none;
+    padding: 6px 6px;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8daac9c;
+    border: 3px solid;
+    border-radius: 2%;
+    border-image: linear-gradient(#fd4209, #81ff1c) 30;
+    margin: 1vh 0;
+
+    p {
+      font: 130% serif;
+      margin: 1%;
+    }
+
+    .filterResults {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    .filterButtons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 1vw;
+      margin-right: 1vw;
+
+      .MuiButton-containedPrimary {
+        margin-right: 3vw;
+      }
+    }
+  }
+
+  .makeStyles-dropdown-10 {
+    .MuiButton-outlinedPrimary {
+      padding: 1% 0;
+    }
+  }
+  img{
+    max-height: 30px;
+  }
+}
+

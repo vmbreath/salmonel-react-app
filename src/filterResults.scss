@@ -1,0 +1,16 @@
+fieldset {
+  min-width: 30vw;
+  border-radius: 5px;
+  border-color: cornflowerblue;
+  color: cornflowerblue;
+  margin-bottom: 7px;
+  max-width: 70vw;
+  padding: 0 0 6px 2px;
+  white-space: normal;
+
+  p {
+    color: black;
+    word-wrap: break-word;
+    font-size: 2vh;
+  }
+}
